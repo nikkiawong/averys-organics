@@ -41,8 +41,15 @@ const marketSchedule = [
 ];
 
 function Calendar(){
+  const calendarStyles = {
+    display: "flex",
+    justifyContent: "center",
+    margin: "5% 3%",
+    border: "1px solid black",
+    textAlign: "center"
+  }
   return (
-    <div>
+    <div style={calendarStyles}>
       {marketSchedule.map((date, index) =>
         <CalendarDay day={date.day}
           location={date.location}
@@ -55,3 +62,9 @@ function Calendar(){
 }
 
 export default Calendar;
+
+// produceList = (props) => {
+//   for (let i=0; i < props.selection.length; i++) {
+//     return props.selection[i];
+//   }
+// }
