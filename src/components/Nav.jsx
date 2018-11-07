@@ -9,7 +9,8 @@ function Nav(){
     alignItems: 'center',
     justifyContent: 'center',
     position: 'fixed',
-    zIndex: '100'
+    zIndex: '100',
+    boxShadow: '1px 4px 14px 1px rgba(0,0,0,0.4)'
   };
   let h3Styles = {
     fontSize: '25px',

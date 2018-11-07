@@ -8,7 +8,8 @@ function Header(){
     backgroundSize: 'cover',
     backgroundAttachment: 'fixed',
     backgroundPosition: 'center',
-    position: 'relative'
+    position: 'relative',
+    borderBottom: 'solid 2px tan'
   };
   return (
     <div style={headerStyles}>
