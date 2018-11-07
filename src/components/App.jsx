@@ -3,14 +3,17 @@ import Nav from './Nav';
 import Header from './Header';
 import Calendar from './Calendar';
 import Month from './Month';
+import { Switch, Route } from 'react-router-dom';
 
 function App(){
   return (
     <div>
       <Nav/>
       <Header/>
-      <Calendar/>
-      <Month/>
+      <Switch>
+        <Route exact path='/' component={Calendar} />
+        <Route exact path='/month' component={Month} />
+      </Switch>
     </div>
   );
 }
